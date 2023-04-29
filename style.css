@@ -100,13 +100,13 @@ body {
 
   @media screen and (max-width: 768px) {
     p {
-      font-size: 23vw;
+      font-size: 28vw;
     }
     #text {
-      font-size: 18vw;
+      font-size: 23vw;
     }
     i {
-      font-size: 11vw;
+      font-size: 16vw;
     }
     .typing-text {
       font-size: 14px;
