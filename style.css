@@ -1,0 +1,114 @@
+/* ---- reset ---- */
+@font-face {
+    font-family: "MyFont";
+    src: url("yandermo.ttf");
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+body {
+    margin: 0;
+    background-color: black;
+  }
+  .logo{
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column;
+    height: 800px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  p{
+    font-family: "MyFont";
+    color: rgb(68, 255, 121);
+    font-size: 150px;
+    filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
+    margin: 0;
+
+  }
+.container{
+  height: 500px;
+  background-color: aqua;
+}
+
+  #text{
+    font-family: "MyFont";
+    color: rgb(206, 241, 216);
+    font-size: 80px;
+    margin: 0;
+   text-align: center;
+  }
+  .icons{
+    filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
+ 
+    padding: 20px;
+    margin-top: 10px;
+    
+  }
+  i{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    margin-right: 14px;
+    transition: all 0.3s ease-in-out;
+  }
+  .icons :hover{
+    color: #37ff14a8;
+    transform: scale(1.4);
+  }
+  
+
+  .typing-text {
+    overflow: hidden;
+  }
+  .spa{
+    color: rgb(0, 215, 25);
+    display: inline;
+  opacity: 1;
+
+  }
+  
+  .typing-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    filter: none;
+    font-weight: bold;
+  }
+  
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 20vw;
+    }
+    #text {
+      font-size: 15vw;
+    }
+    i {
+      font-size: 8vw;
+    }
+    .typing-text {
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1dbbe6d297.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    
+    <div id="particles-js"></div>
+        <div class="logo"><p>A N D R E I</p>
+            <p id="text">Parquez</p>
+            <div class="icons">
+                <a href="https://github.com"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <p class="typing-text">My dream is to become an <span class="spa"> IT professional.</span></p>
+
+                  
+                  
+            </div>
+            
+          <div class="container"></div>
+          <div class="container"></div>
+        </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js.js"></script>
+    <script>
+        const text = document.querySelector('.typing-text');
+        const textContent = text.textContent;
+      
+        text.textContent = '';
+      
+        let i = 0;
+      
+        function typeWriter() {
+          if (i < textContent.length) {
+            text.textContent += textContent.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+          }
+        }
+      
+        typeWriter();
+      </script>
+      
+      
+      
+      
+      
+      
+      
+</body>
+</html>
