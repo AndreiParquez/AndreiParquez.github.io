@@ -25,12 +25,14 @@ p{
   font-size: 150px;
   filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
   margin: 0;
+ 
 
 }
 .container{
 height: 500px;
+flex-direction: column;
+display: flex; justify-content: center;align-items: center;
 
-display: flex; justify-content: center;
 
 
 }
@@ -53,6 +55,7 @@ padding: 20px;
 width: 700px;
 margin-right: 20px;
 margin-left: 20px;
+height: 900px;
 
 }
 #text{
@@ -75,6 +78,7 @@ i{
   text-align: center;
   margin-right: 14px;
   transition: all 0.3s ease-in-out;
+ 
 }
 .icons :hover{
   color: #37ff14a8;
@@ -111,6 +115,7 @@ opacity: 1;
   filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
   overflow: hidden;
   margin-top: 5px;
+ 
 }
 
 @keyframes fadeIn {
@@ -145,4 +150,22 @@ opacity: 1;
   .line{
     width: 140px;
   }
+  .container{
+   width: 400px;
+  }
+  .incontainer{
+    width: 400px;
+    
+  }
+  h1{
+    white-space:nowrap;
+    font-size: 30px;
+font-weight: bold;
+margin-left: 5px;
+    }
+    .sub{
+      font-size: 10px;
+      font-weight: bolder;
+      margin-left: 5px;
+    }
 }
