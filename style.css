@@ -157,7 +157,7 @@ opacity: 1;
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   p {
     font-size: 30vw;
   }
