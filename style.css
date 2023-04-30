@@ -55,6 +55,7 @@ filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
   font-size: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bolder;
+  text-align: end;
 }
 .incontainer{
 
@@ -67,10 +68,11 @@ height: 900px;
   display: flex;
   padding: 10px;
   filter:none;
+  
 }
 .parent{
   width: 400px;
-  background-color: aqua;
+  display: flex; justify-content: center;align-items: center;
   height: 400px;
   filter:none;
 }
@@ -116,7 +118,7 @@ i{
   color: rgb(246, 255, 247);
   display: inline;
 opacity: 1;
-
+filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
 }
 
 .typing-text {
@@ -174,11 +176,11 @@ opacity: 1;
     width: 140px;
   }
   .container{
-   width: 380px;
+   width: 370px;
    margin-left: 10px;
   }
   .incontainer{
-    width: 380px;
+    width: 383px;
     
   }
   h1{
@@ -191,5 +193,8 @@ margin-left: 20px;
       font-size: 10px;
       font-weight: bolder;
       margin-left: 20px;
+    }
+    .sub2{
+      font-size: 3vw;
     }
 }
