@@ -23,7 +23,7 @@ p{
   font-family: "MyFont";
   color: rgb(68, 255, 121);
   font-size: 150px;
-  filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
+  filter: drop-shadow(0 0 8px #37ff14a8) drop-shadow(0 0 15px #37ff14ab);
   margin: 0;
  
 
