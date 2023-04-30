@@ -12,7 +12,7 @@
   }
 body {
     margin: 0;
-    background-color: black;
+    background-color: #191825;
   }
   .logo{
     display: flex; justify-content: center; align-items: center;
@@ -30,9 +30,23 @@ body {
   }
 .container{
   height: 500px;
-  background-color: aqua;
-}
 
+  display: flex; justify-content: center;
+ 
+ 
+}
+h1{
+  font-family:"MyFont" ;
+  color: rgb(68, 255, 121);
+}
+.incontainer{
+  filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
+  padding: 20px;
+  width: 700px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 7px solid rgb(68, 255, 121);
+}
   #text{
     font-family: "MyFont";
     color: rgb(206, 241, 216);
@@ -75,12 +89,21 @@ body {
     white-space: nowrap;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
     filter: none;
     font-weight: bold;
+   
   }
-  
+  .line{
+    height:4px ;
+    background-color: rgb(0, 215, 25);
+    width: 160px;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
+    overflow: hidden;
+    margin-top: 5px;
+  }
 
   @keyframes fadeIn {
     0% {
@@ -100,15 +123,18 @@ body {
 
   @media screen and (max-width: 768px) {
     p {
-      font-size: 20vw;
+      font-size: 30vw;
     }
     #text {
-      font-size: 15vw;
+      font-size: 25vw;
     }
     i {
-      font-size: 8vw;
+      font-size: 11vw;
     }
     .typing-text {
       font-size: 14px;
+    }
+    .line{
+      width: 140px;
     }
   }
