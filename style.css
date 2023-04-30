@@ -50,6 +50,12 @@ filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bolder;
 }
+.sub2{
+  color: #37ff14a8;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
 .incontainer{
 
 width: 700px;
@@ -107,7 +113,7 @@ i{
   overflow: hidden;
 }
 .spa{
-  color: rgb(0, 215, 25);
+  color: rgb(246, 255, 247);
   display: inline;
 opacity: 1;
 
@@ -168,12 +174,11 @@ opacity: 1;
     width: 140px;
   }
   .container{
-   width: 390px;
-   margin-left: 0;
+   width: 380px;
+   margin-left: 10px;
   }
   .incontainer{
-    width: 390px;
-    padding-left: 8px;
+    width: 380px;
     
   }
   h1{
