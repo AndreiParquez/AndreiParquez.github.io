@@ -1,148 +1,71 @@
-@font-face {
-  font-family: "MyFont";
-  src: url("yandermo.ttf");
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-body {
-  margin: 0;
-  background-color: #191825;
-}
-.logo{
-  display: flex; justify-content: center; align-items: center;
-  flex-direction: column;
-  height: 800px;
-  animation: fadeIn 1s ease-in-out;
-}
-p{
-  font-family: "MyFont";
-  color: rgb(68, 255, 121);
-  font-size: 150px;
-  filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
-  margin: 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrei R. Parquez</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1dbbe6d297.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+    
+    <div id="particles-js"></div>
+        <div class="logo"><p>A N D R E I</p>
+            <p id="text">Parquez</p>
+            <div class="icons">
+                <a href="https://github.com/AndreiParquez"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/andrei.parquez.5"><i class="fab fa-facebook"></i></a>
+                <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+                </div>
 
-}
-.container{
-height: 500px;
+                
+                <p class="typing-text">Hi! Im currently a Student at CVSU Bacoor</p>
 
-display: flex; justify-content: center;
+<div class="line">.</div>
+                  
+                  
+            </div>
+            
+          <div class="container">
+            
+            <div class="incontainer">
+              <p class="sub">LETS TALK ABOUT ME</p>
+              <h1>ABOUT  ME</h1>
+            </div>
+            </div>
+        </div>
+    
 
-
-}
-h1{
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-color: rgb(183, 255, 203);
-font-size: 40px;
-font-weight: bold;
-margin: 0;
-}
-.sub{
-  color: #37ff14a8;
-  font-size: 15px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-}
-.incontainer{
-filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
-padding: 20px;
-width: 700px;
-margin-right: 20px;
-margin-left: 20px;
-
-}
-#text{
-  font-family: "MyFont";
-  color: rgb(206, 241, 216);
-  font-size: 80px;
-  margin: 0;
- text-align: center;
-}
-.icons{
-  filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
-
-  padding: 20px;
-  margin-top: 10px;
-  
-}
-i{
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  text-align: center;
-  margin-right: 14px;
-  transition: all 0.3s ease-in-out;
-}
-.icons :hover{
-  color: #37ff14a8;
-  transform: scale(1.4);
-}
-
-
-.typing-text {
-  overflow: hidden;
-}
-.spa{
-  color: rgb(0, 215, 25);
-  display: inline;
-opacity: 1;
-
-}
-
-.typing-text {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  color: #fff;
-  filter: none;
-  font-weight: bold;
- 
-}
-.line{
-  height:4px ;
-  background-color: rgb(0, 215, 25);
-  width: 160px;
-  border-radius: 3px;
-  filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
-  overflow: hidden;
-  margin-top: 5px;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-  p {
-    font-size: 30vw;
-  }
-  #text {
-    font-size: 25vw;
-  }
-  i {
-    font-size: 11vw;
-  }
-  .typing-text {
-    font-size: 14px;
-  }
-  .line{
-    width: 140px;
-  }
-}
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js.js"></script>
+    <script>
+        const text = document.querySelector('.typing-text');
+        const textContent = text.textContent;
+      
+        text.textContent = '';
+      
+        let i = 0;
+      
+        function typeWriter() {
+          if (i < textContent.length) {
+            text.textContent += textContent.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+          }
+        }
+      
+        typeWriter();
+      </script>
+      
+      
+      
+      
+      
+      
+      
+</body>
+</html>
