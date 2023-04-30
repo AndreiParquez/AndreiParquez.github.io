@@ -12,7 +12,7 @@
   }
 body {
     margin: 0;
-    background-color: black;
+    background-color:#2C3333 ;
   }
   .logo{
     display: flex; justify-content: center; align-items: center;
