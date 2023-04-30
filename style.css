@@ -12,7 +12,11 @@
   }
 body {
     margin: 0;
+<<<<<<< HEAD
     background-color: #191825;
+=======
+    background-color:#191825;
+>>>>>>> 6a0929286251ea72d90e4f8a8c452dd8a6dd48ac
   }
   .logo{
     display: flex; justify-content: center; align-items: center;
@@ -134,7 +138,11 @@ h1{
     .typing-text {
       font-size: 14px;
     }
+<<<<<<< HEAD
     .line{
       width: 140px;
     }
   }
+=======
+  }
+>>>>>>> 6a0929286251ea72d90e4f8a8c452dd8a6dd48ac
