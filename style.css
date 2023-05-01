@@ -146,10 +146,18 @@ height: 900px;
   display: flex;
   padding: 10px;
   filter:none;
+  margin: 10px;
   
   
 }
-
+#card{
+  background-color: #191825;
+  height: 300px;
+  width: 600px;
+  border-radius: 20px;
+ margin-top: 0;
+  box-shadow: rgba(0, 234, 19, 0.4) 0px 0px 0px 2px, rgba(2, 238, 112, 0.65) 0px 4px 6px -1px, rgba(21, 255, 0, 0.08) 0px 1px 0px inset;
+}
 
 
 .parent{
