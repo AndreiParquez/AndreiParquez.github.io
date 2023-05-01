@@ -174,12 +174,12 @@ height: 900px;
 }
 .child img{
   height: 290px;
-  filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
+  filter: drop-shadow(0 0 10px #2fd712a8) drop-shadow(0 0 20px #37ff14ab);
   
 }
 .parent img{
   transform: rotate(-45deg);
-  filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
+  filter: drop-shadow(0 0 10px #2fd712a8) drop-shadow(0 0 20px #37ff14ab);
   
 }
 #text{
