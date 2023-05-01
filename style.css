@@ -9,6 +9,18 @@
   height: 100%;
   z-index: -1;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 body {
   margin: 0;
   background-color: #191825;
@@ -69,7 +81,11 @@ height: 900px;
   padding: 10px;
   filter:none;
   
+  
 }
+
+
+
 .parent{
   width: 400px;
   display: flex; justify-content: center;align-items: center;
@@ -78,10 +94,15 @@ height: 900px;
 }
 .child{
   width: 400px;
-  background-color: rgb(94, 22, 138);
   margin-left: 9px;
   height: 400px;
   filter:none;
+  display: flex; justify-content: center;align-items: center;
+}
+.child img{
+  height: 290px;
+  filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
+  
 }
 #text{
   font-family: "MyFont";
@@ -197,4 +218,7 @@ margin-left: 20px;
     .sub2{
       font-size: 3vw;
     }
+    .child img{
+      height: 200px;
+}
 }

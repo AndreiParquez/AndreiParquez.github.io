@@ -22,29 +22,26 @@
                 <a href="https://www.facebook.com/andrei.parquez.5"><i class="fab fa-facebook"></i></a>
                 <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
                 </div>
-
-                
                 <p class="typing-text">Hi! Im currently a Student at CVSU Bacoor</p>
-
 <div class="line">.</div>
                   
                   
             </div>
             
-          <div class="container">
+          <div class="container ">
             
-            <div class="incontainer">
+            <div class="incontainer reveal">
               <p class="sub">LETS TALK ABOUT ME</p>
               <h1>ABOUT  ME</h1>
               <div class="container2">
               <div class="parent">
-                <p class="sub2">Im <span class="spa">Andrei R. Parquez</span>, Born on March 23 2002 at  Albay.<br>
+                <p class="sub2">Im <span class="spa">Andrei R. Parquez</span>, Born on March 23 2002 at  Albay.<br><br>
                 I love playing Online games like <span class="spa">Mobile Legends</span> and <span class="spa">Call of Duty Mobile</span>
                 </p>
               </div>
-              <div class="child">.</div></div>
+              <div class="child"><img src="pic.png"></div></div>
             </div>
-            <div class="incontainer">
+            <div class="incontainer reveal">
               <p class="sub">WHAT I CAN  OFFER</p>
               <h1>PROJECTS</h1>
               <div class="container2">
@@ -58,27 +55,25 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js.js"></script>
     <script>
-        const text = document.querySelector('.typing-text');
-        const textContent = text.textContent;
-      
-        text.textContent = '';
-      
-        let i = 0;
-      
-        function typeWriter() {
-          if (i < textContent.length) {
-            text.textContent += textContent.charAt(i);
-            i++;
-            setTimeout(typeWriter, 100);
-          }
-        }
-      
-        typeWriter();
+       function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
       </script>
-      
-      
-      
-      
+
       
       
       
