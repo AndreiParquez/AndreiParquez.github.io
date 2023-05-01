@@ -38,7 +38,7 @@
  .loader::before,
  .loader::after {
   content: '';
-  border: 5px solid #37ff14a8;
+  border: 5px solid #4dff2ede;
   border-radius: 50%;
   width: inherit;
   height: inherit;
@@ -294,5 +294,8 @@ margin-left: 20px;
 }
 .child{
   height: 280px;
+}
+#loader {
+  display: flex; justify-content: center; align-items: center;
 }
 }
