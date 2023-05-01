@@ -178,7 +178,7 @@ height: 900px;
   
 }
 .parent img{
- 
+  transform: rotate(-45deg);
   filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
   
 }
@@ -204,10 +204,7 @@ i{
   transition: all 0.3s ease-in-out;
  
 }
-#game{
-  color: rgb(255, 255, 255);
-  font-size: 200px;
-}
+
 .icons :hover{
   color: #37ff14a8;
   transform: scale(1.4);
