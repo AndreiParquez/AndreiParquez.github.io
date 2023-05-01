@@ -197,11 +197,11 @@ filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
     width: 140px;
   }
   .container{
-   width: 370px;
+   width: 360px;
    margin-left: 10px;
   }
   .incontainer{
-    width: 383px;
+    width: 373px;
     
   }
   h1{
@@ -220,5 +220,6 @@ margin-left: 20px;
     }
     .child img{
       height: 200px;
+      margin-left:9px ;
 }
 }
