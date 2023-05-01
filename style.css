@@ -197,7 +197,10 @@ height: 900px;
 .parent img{
   transform: rotate(-45deg);
   filter: drop-shadow(0 0 10px #2fd712a8) drop-shadow(0 0 20px #37ff14ab);
-  
+  animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 #text{
   font-family: "MyFont";
