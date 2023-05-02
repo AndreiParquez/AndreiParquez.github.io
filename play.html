@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Play Sound on Button Click</title>
+</head>
+<body>
+	<button id="playSound">Play Sound</button>
+	<audio id="audio" src="music.wav"></audio>
+
+	<script>
+		// Get the button and audio elements
+		var button = document.getElementById("playSound");
+		var audio = document.getElementById("audio");
+
+		// Attach a click event listener to the button
+		button.addEventListener("click", function() {
+			// Play the audio file
+			audio.play();
+		});
+	</script>
+</body>
+</html>

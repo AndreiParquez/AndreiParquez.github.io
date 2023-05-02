@@ -12,6 +12,10 @@
     
 </head>
 <body>
+  <audio id="bgMusic" autoplay loop>
+    <source src="bg.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
   <div id="loader">
     <div class="spinner">
       <div class="loader l1"></div>
@@ -43,7 +47,7 @@
                     <p class="sub2">Im <span class="spa">Andrei R. Parquez</span>, Born on March 23 2002 at  Albay.<br><br>
                        </p>
                     </div>
-                    <div class="child"><img src="pic.png"></div>
+                    <div class="child"><img src="pic.png" alt="Image" onclick="playSound()"></div><audio id="audio" src="music.wav"></audio>
                   </div>
                <div class="container2 reveal">
                   <div class="parent">
@@ -71,6 +75,7 @@
                
             </div>
           </div>
+    </div></div>
     
 
 </div>
@@ -107,6 +112,25 @@ window.addEventListener("scroll", reveal);
 
       </script>
       
-      
+      <script>
+        function playSound() {
+          // Get the audio element
+          var audio = document.getElementById("audio");
+    
+          // Play the audio file
+          audio.play();}</script>
+          <script>
+            // Get the background music element
+            var bgMusic = document.getElementById("bgMusic");
+        
+            // Pause and resume the music when the window gains or loses focus
+            window.addEventListener("focus", function() {
+              bgMusic.play();
+            });
+        
+            window.addEventListener("blur", function() {
+              bgMusic.pause();
+            });
+          </script>
 </body>
 </html>
