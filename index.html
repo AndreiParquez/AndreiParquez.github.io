@@ -76,6 +76,7 @@
   <script>
     function changeImage() {
         var happy = new Audio('song.mp3');
+        var cry = new Audio('cry.mp3');
       var image = document.getElementById('image');
       var textBox = document.getElementById('textBox');
       var inputValue = textBox.value.toLowerCase();
@@ -93,6 +94,7 @@
       } else {
         successMessage.style.display = 'none';
         errorMessage.style.display = 'block';
+        cry.play();
       }
     }
       
