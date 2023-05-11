@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrei R. Parquez</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1dbbe6d297.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="img" href="ic.png">
+    
+    
+</head>
+<body>
+  <audio id="bgMusic" autoplay loop>
+    <source src="bg.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <div id="loader">
+    <div class="spinner">
+      <div class="loader l1"></div>
+      <div class="loader l2"></div>
+      </div>
+    </div>
+    
+      <div id="particles-js"></div>
+        <div class="logo"><p>A N D R E I</p>
+          <p id="text">Parquez</p>
+            <div class="icons">
+                <a href="https://github.com/AndreiParquez"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/andrei.parquez.5"><i class="fab fa-facebook"></i></a>
+                <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+            </div>
+                <p class="typing-text">Hi! Im currently a Student at CVSU Bacoor</p>
+                <div class="line">.</div>
+                  
+                  
+        </div>
+            
+          <div class="container ">
+            <div class="incontainer reveal">
+              <p class="sub">LETS TALK ABOUT ME</p>
+              <h1>ABOUT  ME</h1>
+                 <div class="container2">
+                    <div class="parent">
+                    <p class="sub2">Im <span class="spa">Andrei R. Parquez</span>, Born on March 23 2002 at  Albay.<br><br>
+                       </p>
+                    </div>
+                    <div class="child"><img src="pic.png" alt="Image" onclick="playSound()"></div><audio id="audio" src="music.wav"></audio>
+                  </div>
+               <div class="container2 reveal">
+                  <div class="parent">
+                    <img src="sv.svg">
+                  </div>
+                      <div class="child"> <p class="sub2">
+                  I love playing Online games like <span class="spa">Mobile Legends</span> and <span class="spa">Call of Duty Mobile</span></p>
+                       </div>
+                </div>
+
+                <div class="container2 reveal">
+                  <div class="parent">
+                  <p class="sub2"><span class="spa">Coding</span> and <span class="spa">Developing Website</span> are my Hobbies<br><br>
+                     </p>
+                  </div>
+                  <div class="child"><img src="it.svg"></div>
+                </div>
+               
+            
+         <div class="incontainer reveal">
+              <p class="sub">WHAT I CAN  OFFER</p>
+              <h1>PROJECTS</h1>
+            <div class="container2">
+                <div id="card">j </div>
+               
+            </div>
+          </div>
+    </div></div>
+    
+
+</div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js.js"></script>
+    <script>
+       function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+      </script>
+
+      <script>
+        window.onload = function() {
+  var loader = document.getElementById("loader");
+  loader.style.visibility = "visible";
+  setTimeout(function() {
+    loader.style.visibility = "hidden";
+  }, 2000); // Adjust the delay time as needed
+}
+
+      </script>
+      
+      <script>
+        function playSound() {
+          // Get the audio element
+          var audio = document.getElementById("audio");
+    
+          // Play the audio file
+          audio.play();}</script>
+          <script>
+            // Get the background music element
+            var bgMusic = document.getElementById("bgMusic");
+        
+            // Pause and resume the music when the window gains or loses focus
+            window.addEventListener("focus", function() {
+              bgMusic.play();
+            });
+        
+            window.addEventListener("blur", function() {
+              bgMusic.pause();
+            });
+          </script>
+</body>
+</html>
