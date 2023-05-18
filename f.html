@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: rgb(10, 12, 27);
+      
+    }
+
+    #imageContainer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #successMessage,
+    #errorMessage {
+      text-align: center;
+      margin-bottom: 10px;
+      display: none;
+      color: #fff;
+    }
+
+    #textBox {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #c14eb2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 720px) {
+      #imageContainer {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      #textBox{
+        border: none;
+        width: 290px;
+        margin: 10px;
+        margin-left: 10%;
+        height: 35px;
+      }
+      button {
+        width: 300px;
+        margin: 10px;
+        margin-left: 10%;
+      }
+    }
+  </style>
+  <script>
+    function changeImage() {
+        var happy = new Audio('song.mp3');
+        var cry = new Audio('cry.mp3');
+      var image = document.getElementById('image');
+      var textBox = document.getElementById('textBox');
+      var inputValue = textBox.value.toLowerCase();
+      var successMessage = document.getElementById('successMessage');
+      var errorMessage = document.getElementById('errorMessage');
+  
+      // Check the current source of the image
+      if (inputValue.includes('love') || inputValue.includes('jabol')  || inputValue.includes('jabul') ) {
+        // Change to a different image
+        image.src = 'happy.gif';
+        image.alt = 'Image 2';
+        happy.play();
+        successMessage.style.display = 'block';
+        errorMessage.style.display = 'none';
+      } else {
+        successMessage.style.display = 'none';
+        errorMessage.style.display = 'block';
+        cry.play();
+      }
+    }
+      
+  </script>
+</head>
+<body>
+  <div id="imageContainer">
+    <img id="image" src="image.png" alt="Image 1">
+    <p id="successMessage" style="display: none; color: #fff;">Im Happy Mahal!!!</p>
+    <p id="errorMessage" style="display: block; color:#fff;">Mahal, Im  sad >_<</p>
+  </div>
+<input type="text" id="textBox">
+  <button onclick="changeImage()">Ok</button>
+</body>
+</html>
