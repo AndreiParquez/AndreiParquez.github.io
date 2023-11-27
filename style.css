@@ -143,7 +143,6 @@ filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
 .incontainer{
 
 width: 700px;
-
 height: 900px;
 }
 .container2{
@@ -156,12 +155,83 @@ height: 900px;
 }
 #card{
   background-color: #191825;
-  height: 300px;
-  width: 600px;
+  height: 225px;
+  width: 680px;
   border-radius: 20px;
  margin-top: 0;
-  box-shadow: rgba(0, 234, 19, 0.4) 0px 0px 0px 2px, rgba(2, 238, 112, 0.65) 0px 4px 6px -1px, rgba(21, 255, 0, 0.08) 0px 1px 0px inset;
+ display: flex;
 }
+
+.pro1{
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 200px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid #bab9b9;
+  filter: drop-shadow(0 0 3px #37ff1468) drop-shadow(0 0 9px #37ff1467);
+  
+}
+.pro1 img{
+  height: 200px;
+  width: 350px;
+  border-radius: 6px;
+}
+.pro2{
+  margin-left: 15px;
+  height: 200px;
+  width: 270px;
+  margin-top: 10px;
+}
+.pro2 h3{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: rgb(183, 255, 203);
+filter: drop-shadow(0 0 10px #37ff14a8) drop-shadow(0 0 20px #37ff14ab);
+text-align: center;
+}
+.pro2 p{
+  font-family: 'Poppins', sans-serif;;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+.pro2 img{
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+.pro2 a{
+  text-decoration: none;
+  color: #191825;
+  font-family:sans-serif ;
+  font-style: italic;
+  
+}
+.pro2 button{
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #37ff14a8;
+  height: 40px;
+  width: 135px;
+  padding: 4px;
+  display: flex;
+}
+.pro2 button span{
+  color: #fff;
+  font-family:sans-serif ;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 11px;
+  margin-left: 5px;
+margin-top: 2px;
+
+}
+.pro2 button:hover{
+  filter: drop-shadow(0 0 10px #2fd712a8) drop-shadow(0 0 20px #37ff14ab);
+  transition: 0.4s ;
+}
+
 
 
 .parent{
@@ -332,5 +402,38 @@ margin-left: 20px;
 }
 #loader {
   display: flex; justify-content: center; align-items: center;
+}
+#card{
+  display: block;
+  height: 399px;
+  padding: 3px;
+}
+.pro2{
+  margin-left: 2px;
+  height: 200px;
+  width: 100%;
+  margin-top: 10px;
+}
+.pro1 {
+  height: 200px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 5px;
+  
+}
+.tech{
+  margin-left: 50px;
+ 
+}
+.pro2 i{
+  font-size: 6vw;
+}
+.pro2 button span{
+  color: #fff;
+  font-family:sans-serif ;
+  font-weight: bold;
+font-size: 11px;
+margin-left: 5px;
+margin-top: 2px;
 }
 }
