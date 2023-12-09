@@ -32,7 +32,7 @@
                 <a href="https://www.facebook.com/andrei.parquez.5"><i class="fab fa-facebook"></i></a>
                 <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
             </div>
-                <p class="typing-text">Hi! Im currently a Student at CVSU Bacoor</p>
+                <p class="typing-text">INFORMATION TECHNOLOGY</p>
                 <div class="line">.</div>
                   
                   
@@ -47,8 +47,20 @@
                     <p class="sub2">Im <span class="spa">Andrei R. Parquez</span>, Born on March 23 2002 at  Albay.<br><br>
                        </p>
                     </div>
-                    <div class="child"><img src="pic.png" alt="Image" onclick="playSound()"></div><audio id="audio" src="music.wav"></audio>
+                    <div class="child"><img src="pic.jpg" alt="Image" onclick="playSound()"></div><audio id="audio" src="music.wav"></audio>
                   </div>
+
+
+
+                  <div class="container2">
+                    <div class="parent">
+                    <p class="sub2">Im currently living at <span class="spa">Soldiers Hills 4 </span>, Bacoor Cavite<br><br>
+                       </p>
+                    </div>
+                    <div class="child">
+                      <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123654.10324382538!2d120.88645837954974!3d14.41616622790038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d2407b04433f%3A0x779154cd6b3d2d4c!2sBacoor%2C%20Cavite!5e0!3m2!1sen!2sph!4v1702098901361!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><audio id="audio" src="music.wav"></audio>
+                  </div></div>
+                  
               
          <div class="incontainer reveal">
               <p class="sub">WHAT I CAN  OFFER</p>
@@ -114,6 +126,27 @@
     
 
 </div>
+<script>
+  const textElement = document.querySelector('.typing-text');
+  const text = textElement.textContent;
+  const lineElement = document.querySelector('.line');
+
+  let index = 0;
+
+  function type() {
+    textElement.textContent = text.slice(0, index);
+    index++;
+
+    if (index > text.length) {
+      index = 0;
+    }
+
+    setTimeout(type, 150); // Adjust the typing speed (milliseconds)
+  }
+
+  // Start typing when the page loads
+  window.onload = type;
+</script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js.js"></script>
     <script>
