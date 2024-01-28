@@ -429,7 +429,7 @@ p{
     }
   }
 
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 720px) {
     /* Define specific styles for screens up to 767px wide */
     h1 {
         font-size: 2rem; /* Adjusted for mobile */
