@@ -2,203 +2,287 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrei R. Parquez</title>
+    <title>Andrei</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1dbbe6d297.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="img" href="ic.png">
-    
-    
 </head>
 <body>
-  <audio id="bgMusic" autoplay loop>
-    <source src="bg.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
-  <div id="loader">
-    <div class="spinner">
-      <div class="loader l1"></div>
-      <div class="loader l2"></div>
-      </div>
-    </div>
-    
-      <div id="particles-js"></div>
-        <div class="logo"><p>A N D R E I</p>
-          <p id="text">Parquez</p>
+    <header>
+        <div class="logo"><img src="off.png" id="image-to-change"></div><label id="dark-change"></label>
+        
+        <nav>
+            <ul>
+                <li class="active"><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#project">My Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+<section id="home">
+    <div class="container">
+        <div class="box1">
+            <h1>I'm Andrei R. Parquez</h1>
+            <p>A young Web Developer, Game Developer, and a Student at <span style="color: rgb(0, 160, 40);font-weight: bold;">Cavite State University</span></p><img src="walk.gif">
             <div class="icons">
                 <a href="https://github.com/AndreiParquez"><i class="fab fa-github"></i></a>
                 <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.facebook.com/andrei.parquez.5"><i class="fab fa-facebook"></i></a>
                 <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
             </div>
-                <p class="typing-text">Javascript, C#, NodeJs, Mysql</p>
-                <div class="line">.</div>
-                  
-                  
         </div>
+        <div class="box2">
+            <img src="face.png">
             
-          <div class="container ">
-            <div class="incontainer reveal">
-              <p class="sub">LETS TALK ABOUT ME</p>
-              <h1>ABOUT  ME</h1>
-                 <div class="container2">
-                    <div class="parent">
-                    <p class="sub2">Im <span class="spa">Andrei R. Parquez</span>, Born on March 23 2002 at  Albay.<br><br>
-                       </p>
-                    </div>
-                    <div class="child"><img src="pic.jpg" alt="Image" onclick="playSound()"></div><audio id="audio" src="music.wav"></audio>
-                  </div>
-
-
-
-                  <div class="container2">
-                    <div class="parent">
-                    <p class="sub2">Im currently living at <span class="spa">Soldiers Hills 4 </span>, Bacoor Cavite<br><br>
-                       </p>
-                    </div>
-                    <div class="child">
-                      <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123654.10324382538!2d120.88645837954974!3d14.41616622790038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d2407b04433f%3A0x779154cd6b3d2d4c!2sBacoor%2C%20Cavite!5e0!3m2!1sen!2sph!4v1702098901361!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><audio id="audio" src="music.wav"></audio>
-                  </div></div>
-                  
-              
-         <div class="incontainer reveal">
-              <p class="sub">WHAT I CAN  OFFER</p>
-              <h1>PROJECTS</h1>
-            <div class="container2">
-                <div id="card">
-                <div class="pro1">
-                  <img src="p1.gif">
+        <div class="eyes-container">
+              <div class="eye" id="left-eye">
+               <div class="pupil"> <div class="iris"></div></div>
+             </div>
+                 <div class="eye" id="right-eye">
+               <div class="pupil"> <div class="iris"></div></div>
                 </div>
-                <div class="pro2">
-                  <h3>Pixel Art Mobile Game</h1>
-                    <p>A simple 2d game showcasing Philippine Mythology</p>
-                    
-                    <div style="margin-top: 50px;">
-                  <span style="font-style: italic;color: aliceblue;font-family: 'Courier New', Courier, monospace;font-size: 13px;">Technologies:</span>
-                    <div class="tech" style="display: flex;;"><img src="c.png"><img src="u.png"><img src="a.png"> <a href="https://github.com/AndreiParquez"><button><span >View Github</span><i class="fab fa-github"></i></button></a></div>
-                  </div>
-                </div>
-                </div>   
-            </div>
+       </div>
 
-
-            <div class="container2">
-              <div id="card">
-              <div class="pro1">
-                <img src="k1.png">
-              </div>
-              <div class="pro2">
-                <h3>Kalawakan: E-learning</h1>
-                  <p>Web based E learning About Universe</p>
-                  
-                  <div style="margin-top: 50px;">
-                <span style="font-style: italic;color: aliceblue;font-family: 'Courier New', Courier, monospace;font-size: 13px;">Technologies:</span>
-                  <div class="tech" style="display: flex;;"><img src="js.png"><img src="n.png"><a href="https://github.com/AndreiParquez"><button><span>View Github</span><i class="fab fa-github"></i></button></a></div>
-                </div>
-              </div>
-              </div>   
-          </div>
-
-
-          <div class="container2">
-            <div id="card">
-            <div class="pro1">
-              <img src="h.png">
-            </div>
-            <div class="pro2">
-              <h3>Hotel Management System</h1>
-                <p>Integrated POS and Inventory System</p>
-                
-                <div style="margin-top: 50px;">
-              <span style="font-style: italic;color: aliceblue;font-family: 'Courier New', Courier, monospace;font-size: 13px;">Technologies:</span>
-                <div class="tech" style="display: flex;;"><img src="c.png"><img src="m.png"><a href="https://github.com/AndreiParquez"> <button href="https://github.com/AndreiParquez"><span>View Github</span><i class="fab fa-github"></i></button></a></div>
-              </div>
-            </div>
-            </div>   
         </div>
 
+        <div class="tech">
+            <p>Tech Stack <span style="font-size: 35px;position: absolute;margin-left: 30px;margin-top: -15px;font-family:monospace;">|</span></p>
+            <div class="small">
+                <img src="html.png"><img src="css.png"><img src="js.png"><img src="c.png"><img src="u.png"><img src="n.png"><img src="a.png">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="about">
+        
+        <div style="display: flex;">
+        <div class="pic"><img src="pic.jpg"></div>
+        <div class="text">
+            <p style="font-weight: bolder;font-size: 19px; text-indent: 20px;">About Me<p>
+            <p>• Andrei Reyes Parquez</p>
+            <p>• 21 Years Old</p>
+            <p>• 3rd Year BSIT Student</p>
+            <p>• Gamer & Loves Anime</p>
+           
+            <img src="bird.gif" style="height: 43px;position: absolute;margin-top: -219px;margin-left: 82px;image-rendering: pixelated;">
+            <img src="flu.png" style="height: 50px;position: absolute;margin-left: 100px;  image-rendering: pixelated;margin-top: -10px;">
+            <img src="toji.png" style="height: 140px;position: absolute;left: 420px;  image-rendering: pixelated;margin-top: -100px; filter: drop-shadow(5px 5px 10px #ebebeba9);">
+        </div></div>
 
 
-          </div>
-          
-    </div></div>
+        <div style="display: flex;">
+            <div class="pic"><img src="bahay.png" style="image-rendering: pixelated;border-radius: 0px;"></div>
+            <div class="text">
+                <p style="font-weight: bolder;font-size: 19px; text-indent: 20px;">My Address<p>
+                <p>• 2002-2021 - Maramba Oas Albay</p>
+                <br>
+                <p>• 2021-2002 - Molino 2 Dama de Noche St.</p>
+                <br>
+                <p>• 2023-present - Soldiers Hills 4, Bacoor Cavite</p>
+                <img src="fly.gif" id="birdfly"><img src="fly.gif" id="birdfly"style="margin-top: -200px;right:-30px;">
+                <img src="fly.gif" id="birdfly"style="margin-top: -260px;right:-30px;">
+                               <img src="tree.png" style="height: 240px;position: absolute;margin-left: 130px;  image-rendering: pixelated;margin-top: -230px;z-index: -10;">
+            </div>
+        
+        </div>
+        
+
+           
+     
+    </div><br>
+</section>
+
+<section id="project">
+    <div class="project">
+        <p>My Works</p>
+        <img src="tit.gif" style="image-rendering: pixelated;" id="proj">
+        <div style="display: flex;">
+            <div class="des">
+                <p style="font-weight: bolder;
+                font-size: 19px;text-align: center;">2D Mobile Game</p>
+                <p>• Pixel Art Game</p>
+                <p>• Role Playing Game</p>
+                <p>• Made using Unity Engine</p>
+                <img src="btn.png" style="image-rendering: pixelated;height: 70px;">
+                <p style="position: absolute;margin-top: -60px;"><a href="" style="text-decoration: none;color:white;text-shadow: 
+                -1px -1px 0 #000000bb,1px -1px 0 #000000bb , -1px 1px 0 #000000bb,  1px 1px 0 #000000bb; margin-left: 8px; ">Github</a><i class="fab fa-github" style="margin-top: -2px;position: absolute;"></i></p>
+                <img src="btn.png" style="image-rendering: pixelated;height: 70px;">
+                <p style="position: absolute;margin-top: -60px;margin-left: 137px;"><a href="" style="text-decoration: none;color:white;text-shadow: 
+                    -1px -1px 0 #000000bb,1px -1px 0 #000000bb , -1px 1px 0 #000000bb,  1px 1px 0 #000000bb; margin-left: 8px; ">Play Game</a><i class="fa-solid fa-play"style="margin-top: -2px;position: absolute;"></i></p>              
+            </div>
+                <div class="ss">
+                <img src="board.png" style="image-rendering: pixelated;height: 250px;filter: drop-shadow(5px 5px 10px #000000bd);">
+                <img src="p1.gif" id="ss">
+                </div>
+        </div>
+        <img src="frog.gif" style="height: 40px;position: absolute;margin-left: 130px;  image-rendering: pixelated;margin-top: -10px;z-index: -10;animation: jumpAnimation 6s linear infinite;">
+        <img src="lily.png" style="height: 25px;position: absolute;margin-left: 130px;  image-rendering: pixelated;margin-top: 10px;z-index: -11;">
+
+        <div style="display: flex;">
+            <div class="des">
+                <p style="font-weight: bolder;
+                font-size: 19px;text-align: center;">Kalawakan E-Learning</p>
+                <p>• Web Based E-Learning about Universe</p>
+                <p>• Interactive Web</p>
+                <p>• Html, Css, Js, NodeJs, MySql</p>
+                <img src="btn.png" style="image-rendering: pixelated;height: 70px;">
+                <p style="position: absolute;margin-top: -60px;"><a href="" style="text-decoration: none;color:white;text-shadow: 
+                -1px -1px 0 #000000bb,1px -1px 0 #000000bb , -1px 1px 0 #000000bb,  1px 1px 0 #000000bb; margin-left: 8px; ">Github</a><i class="fab fa-github" style="margin-top: -2px;position: absolute;"></i></p>
+                <img src="btn.png" style="image-rendering: pixelated;height: 70px;">
+                <p style="position: absolute;margin-top: -60px;margin-left: 137px;"><a href="" style="text-decoration: none;color:white;text-shadow: 
+                    -1px -1px 0 #000000bb,1px -1px 0 #000000bb , -1px 1px 0 #000000bb,  1px 1px 0 #000000bb; margin-left: 24px; ">View</a><i class="fa-solid fa-play"style="margin-top: -2px;position: absolute;"></i></p>              
+            </div>
+                <div class="ss">
+                <img src="board.png" style="image-rendering: pixelated;height: 250px;filter: drop-shadow(5px 5px 10px #000000bd);">
+                <img src="k1.png" id="ss">
+                </div>
+        </div>
+        <div style="display: flex;">
+            <img src="sun.png" style="height: 60px;position: absolute;margin-left: 130px;  image-rendering: pixelated;margin-top: -10px;z-index: -10;">
+            <img src="cactus.png" style="height: 60px;position: absolute;margin-left: 430px;  image-rendering: pixelated;margin-top: -10px;z-index: -10;">
+            <img src="coco.png" style="height: 100px;position: absolute;margin-left: 730px;  image-rendering: pixelated;margin-top: -40px;z-index: -10;">
+
+            <div class="des">
+                <p style="font-weight: bolder;
+                font-size: 19px;text-align: center;">Hotel Management System</p>
+                <p>• Integrated POS and Inventory System</p>
+                <p>• Desktop Application</p>
+                <p>• Gui, C#, MySql</p>
+                <img src="btn.png" style="image-rendering: pixelated;height: 70px;">
+                <p style="position: absolute;margin-top: -60px;"><a href="" style="text-decoration: none;color:white;text-shadow: 
+                -1px -1px 0 #000000bb,1px -1px 0 #000000bb , -1px 1px 0 #000000bb,  1px 1px 0 #000000bb; margin-left: 8px; ">Github</a><i class="fab fa-github" style="margin-top: -2px;position: absolute;"></i></p>
+                <img src="btn.png" style="image-rendering: pixelated;height: 70px;">
+                <p style="position: absolute;margin-top: -60px;margin-left: 137px;"><a href="" style="text-decoration: none;color:white;text-shadow: 
+                    -1px -1px 0 #000000bb,1px -1px 0 #000000bb , -1px 1px 0 #000000bb,  1px 1px 0 #000000bb; margin-left: 23px; ">View</a><i class="fa-solid fa-play"style="margin-top: -2px;position: absolute;"></i></p>              
+            </div>
+                <div class="ss">
+                <img src="board.png" style="image-rendering: pixelated;height: 250px;filter: drop-shadow(5px 5px 10px #000000bd);">
+                <img src="h.png" id="ss">
+                </div>
+        </div>
+    </div><br>
+</section>
+
+
+<section id="contact">
+    <div class="contacttitle" style="position: absolute;display: flex;margin-top: -600px;">
+        <img src="c1.png"><p style="font-size: 20px;font-weight: bold;margin:10px;">Leave me a message</p> <img src="c2.png">
+    </div>
+    <div class="mail">
+        <p>Dear Andrei</p>
+        
+        <textarea placeholder="Type your message here..."></textarea>
+        <img src="send.png" style="position: absolute;height: 40px;right: 500px;margin-top: 150px;"><p style="position: absolute;height: 40px;right: 520px;margin-top: 150px;cursor: pointer;">Send</p>
+
+        <p style="font-size: 12px;margin-top: 229px;font-family: myFirstFont;">+639511135549
+        <p style="font-size: 12px;margin-top: -18px;font-family: myFirstFont;">bc.andreiparquez@cvsu.edu.ph</p>
+        
+    </div>
+
+   
+
+
+
+
+
+</section>
+
+
     
-
-</div>
+    
 <script>
-  const textElement = document.querySelector('.typing-text');
-  const text = textElement.textContent;
-  const lineElement = document.querySelector('.line');
+    const movementFactor = 0.3; 
+  
+    document.addEventListener('mousemove', (e) => {
+      const eyesContainer = document.querySelector('.eyes-container');
+      const boundingRect = eyesContainer.getBoundingClientRect();
+      const eyesCenterX = boundingRect.left + boundingRect.width / 2;
+      const eyesCenterY = boundingRect.top + boundingRect.height / 2;
+  
+      const angle = Math.atan2(e.clientY - eyesCenterY, e.clientX - eyesCenterX);
+      const distance = Math.min(boundingRect.width / 4, boundingRect.height / 4) * movementFactor;
+  
+      const pupilLeft = document.getElementById('left-eye').querySelector('.pupil');
+      const pupilRight = document.getElementById('right-eye').querySelector('.pupil');
+  
+      pupilLeft.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
+      pupilRight.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
+    });
+  </script>
 
-  let index = 0;
 
-  function type() {
-    textElement.textContent = text.slice(0, index);
-    index++;
 
-    if (index > text.length) {
-      index = 0;
-    }
 
-    setTimeout(type, 150); // Adjust the typing speed (milliseconds)
-  }
 
-  // Start typing when the page loads
-  window.onload = type;
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var content = document.getElementsByTagName('body')[0];
+        var darkModeButton = document.getElementById('dark-change');
+        var links = document.querySelectorAll('a');
+        var icon = document.querySelectorAll('i');
+        var imageToChange = document.getElementById('image-to-change'); // Add this line
+
+        function toggleDarkMode() {
+            darkModeButton.classList.toggle('active');
+            content.classList.toggle('night');
+
+            links.forEach(function(link) {
+                link.classList.toggle('night');
+            });
+            icon.forEach(function(icon) {
+                icon.classList.toggle('night');
+            });
+
+            if (content.classList.contains('night')) {
+                imageToChange.src = 'on.png';
+            } else {
+                imageToChange.src = 'off.png';
+            }
+
+            var isDarkMode = content.classList.contains('night');
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+
+        var storedDarkMode = localStorage.getItem('darkMode');
+
+        if (storedDarkMode === 'true') {
+            toggleDarkMode();
+        }
+
+        darkModeButton.addEventListener('click', toggleDarkMode);
+
+    });
 </script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js.js"></script>
-    <script>
-       function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            window.scrollTo({
+                top: section.offsetTop - document.querySelector('header').offsetHeight,
+                behavior: 'smooth'
+            });
+        }
     }
-  }
-}
 
-window.addEventListener("scroll", reveal);
-      </script>
+   
+    var navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            var sectionId = link.getAttribute('href').substring(1); 
+            scrollToSection(sectionId); 
+        });
+    });
+});
 
-      <script>
-        window.onload = function() {
-  var loader = document.getElementById("loader");
-  loader.style.visibility = "visible";
-  setTimeout(function() {
-    loader.style.visibility = "hidden";
-  }, 2000); // Adjust the delay time as needed
-}
-
-      </script>
-      
-      <script>
-        function playSound() {
-          // Get the audio element
-          var audio = document.getElementById("audio");
-    
-          // Play the audio file
-          audio.play();}</script>
-          <script>
-            // Get the background music element
-            var bgMusic = document.getElementById("bgMusic");
-        
-            // Pause and resume the music when the window gains or loses focus
-            window.addEventListener("focus", function() {
-              bgMusic.play();
-            });
-        
-            window.addEventListener("blur", function() {
-              bgMusic.pause();
-            });
-          </script>
+</script>
 </body>
 </html>
